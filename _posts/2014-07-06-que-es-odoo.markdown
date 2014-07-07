@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  ¿Qué es Odoo?
-date:   2014-07-July
+date:   2014-07-07 00:20:00
 lang:   es
 author:
   name: Cristian S. Rocha 
