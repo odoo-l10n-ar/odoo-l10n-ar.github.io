@@ -3,17 +3,18 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} &mdash; {{ site.inc.title }}{% else %}{{ site.inc.title }} &mdash; {{ site.inc.subtitle }}{% endif %}</title>
+    <title>{% if page.title.[page.lang] %}{{ page.title.[page.lang] }} &mdash; {{ site.inc.title.[page.lang] }}{% else %}{{ site.inc.title.[page.lang] }} &mdash; {{ site.inc.subtitle.[page.lang] }}{% endif %}</title>
     {% if site.inc.google_font %}<link href="https://fonts.googleapis.com/css?family={{ site.inc.google_font }}" rel="stylesheet" type="text/css">{% endif %}
     {% stylesheet main %}
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    {% stylesheet odoo_l10n_ar %}
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-png" />
     <link rel="apple-touch-icon" href="/images/{{ site.inc.logo }}"/>
-    <link href="{{ site_url }}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.inc.title }}" />
-    <meta name="title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.inc.title }}{% endif %}">
+    <link href="{{ site_url }}/feed.xml" rel="alternate" type="application/rss+xml" title="{{ site.inc.title.[page.lang] }}" />
+    <meta name="title" content="{% if page.title.[page.lang] %}{{ page.title.[page.lang] }} {% else %}{{ site.inc.title.[page.lang] }}{% endif %}">
     <link rel="canonical" href="{{ site.url }}{{ page.url }}">
     {% if page.site.gplus %}<link rel="publisher" href="https://plus.google.com/{{ site.inc.gplus }}">{% endif %} 
     {% if page.author.gplus %}<link rel="author" href="https://plus.google.com/{{ page.author.gplus }}">{% endif %}       
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} {% else %}{{ site.inc.title }}{% endif %}"/>
+    <meta property="og:title" content="{% if page.title.[page.lang] %}{{ page.title.[page.lang] }} {% else %}{{ site.inc.title.[page.lang] }}{% endif %}"/>
     <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
     {% if page.cover_image %}
     <meta property="og:image" content="{{ site.url }}/images/{{ page.cover_image }}"/>
@@ -26,7 +27,7 @@
     <meta property="og:description" content="{{ page.excerpt }}"/>
     <meta name="description" content="{{ page.excerpt }}"/>
     {% endif %}
-    <meta property="og:site_name" content="{{ site.inc.title }}">     
+    <meta property="og:site_name" content="{{ site.inc.title.[page.lang] }}">     
 </head>
 <body>
     
@@ -36,13 +37,20 @@
             <a class="brand" href="/">
                 <img src="/images/{{ site.inc.logo }}" alt="Inc">
             </a>
-            <a href="/" class="home">Blog</a>
-            {% if site.inc.product_link %}<a href="{{ site.inc.product_link }}">Product</a>{% endif %}
-            {% if site.inc.about_link %}<a href="{{ site.inc.about_link }}">About</a>{% endif %}
+	    {% if site.inc.faq.link %}<a href="{{ site.inc.faq.link }}">{{ site.inc.faq.text.[page.lang] }}</a>{% endif %}
+	    {% if site.inc.func.link %}<a href="{{ site.inc.func.link }}">{{ site.inc.func.text.[page.lang] }}</a>{% endif %}
+	    {% if site.inc.collab.link %}<a href="{{ site.inc.collab.link }}">{{ site.inc.collab.text.[page.lang] }}</a>{% endif %}
+	    {% if site.inc.about.link %}<a href="{{ site.inc.about.link }}">{{ site.inc.about.text.[page.lang] }}</a>{% endif %}
         </nav>
-        {% if site.inc.tagline or site.inc.product_url %}<nav class="tagline">
-            {% if site.inc.tagline %}<span>{{ site.inc.tagline }}</span>{% endif %}
+	<nav id="language">
+		<a href="/">{{ site.inc.languages.es.[page.lang] }}</a>
+		<a href="/en">{{ site.inc.languages.en.[page.lang] }}</a>
+	</nav>
+        {% if site.inc.tagline.[page.lang] or site.inc.product_url or site.inc.github_link %}<nav class="tagline">
+            {% if site.inc.tagline.[page.lang] %}<span>{{ site.inc.tagline.[page.lang] }}</span>{% endif %}
             {% if site.inc.product_link %}<a href="{{ site.inc.product_link }}" class="btn btn-outline">Learn More</a>{% endif %}
+	    {% if site.inc.github_link %}<a href="{{ site.inc.github_link }}" class="odoo-url">
+		    <img src="/images/GitHub-Mark-32px.png" alt="GitHub">{{ site.inc.github_text.[page.lang] }}</a>{% endif %}
         </nav>{% endif %}
     </header>
 </section>
@@ -53,11 +61,14 @@
     <div class="container">
         &copy; {{ site.time | date: "%Y" }} 
         
-        <nav>
-            <a href="{{ site.inc.url }}">{{ site.inc.company }}</a> &middot;
-            <a href="/">Blog</a> &middot;
-            {% if site.inc.product_link %}<a href="{{ site.inc.product_link }}">Product</a> &middot; {% endif %}
-            {% if site.inc.about_link %}<a href="{{ site.inc.about_link }}">About</a>{% endif %}
+        <nav class="sections">
+             <ul>
+                 <li><a href="/">Inicio</a></li>
+                 {% if site.inc.faq.link %}<li><a href="{{ site.inc.faq.link }}">{{ site.inc.faq.text.[page.lang] }}</a></li>{% endif %}
+                 {% if site.inc.func.link %}<li><a href="{{ site.inc.func.link }}">{{ site.inc.func.text.[page.lang] }}</a></li>{% endif %}
+                 {% if site.inc.collab.link %}<li><a href="{{ site.inc.collab.link }}">{{ site.inc.collab.text.[page.lang] }}</a></li>{% endif %}
+                 {% if site.inc.about.link %}<li><a href="{{ site.inc.about.link }}">{{ site.inc.about.text.[page.lang] }}</a></li>{% endif %}
+             </ul>
         </nav>
         
         <nav class="social">

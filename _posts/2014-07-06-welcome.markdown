@@ -1,0 +1,24 @@
+---
+layout: post
+title:  Bienvenidos a otra localization
+date:   2014-07-July
+lang:   es
+author:
+  name: Cristian S. Rocha 
+categories: es main
+section: main
+---
+
+Usted a accedido al sitio oficial de Otra Localización Argentina de Odoo. Si se pregunta ¿Qué es Odoo? ¿Qué es una localización? y otras que no encuentre en esta primera página, esperamos responderlas en [Respuestás a Preguntas Frecuentes](/faq). Pero si ya sabe de que se está hablando, puede seguir adelante sin prejuicio.
+
+Si, existen otras localizaciones. Una considerada la oficial, o [Grupo de la Localización Argentina](https://github.com/odoo-ar/odoo-ar.github.io), y una iniciativa llamada [Proyecto Aconcagua](http://proyectoaconcagua.com.ar).
+Entonces, ¿porqué otra? La respuesta más fácil sería porqué es necesario. Por ahora nos vamos a escudar con la idea de diversidad, pero el asunto es más complicado.
+
+Lo mejor no es detallar las diferencias que existen entre las localizaciones, sino explicar en [Acerca de](/about) quienes somos nosotros y que objetivos tenemos.
+
+Si considera que nuestra postura es compatible con su forma de pensar, es momento de preguntarse cómo puede participar en este proyecto. Existen varias formas y todas ellas son descriptas en [Cómo colaborar](/collab).
+
+Por último encontrará en [Funcionalidades](/func) todas las capacidades de esta localización.
+
+Espero que se sienta cómodo con nuestra propuesta y lo invitamos a usar nuestro código, pero por sobre todas las cosas a colaborar.
+

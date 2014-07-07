@@ -1,21 +1,71 @@
 inc:
   # Blog Information
-  title:        "Jekyll Incorporated"
-  subtitle:     "Modern Jekyll based blog for companies"
+  title:
+    en: "Yet Another Argentina Localization for Odoo"
+    es: "Otra Localización Argentina de Odoo"
+  subtitle:
+    en: "A localization by developers for society"
+    es: "Una localización de desarrolladores para la sociedad"
+  languages:
+    en:
+        en: "English"
+        es: "Ingles"
+    es:
+        en: "Spanish"
+        es: "Español"
+
   cover_image:  blog-cover.jpg
   logo:         logo.png
   
   # Company information
-  company:      Incorporated
-  url:          http://sendtoinc.com/
-  facebook:     sendtoinc
-  twitter:      sendtoinc
-  gplus:        '101183822199340201470'
-  about_link:   https://sendtoinc.com/about/
+  company:      odoo_l10n_ar
+  url:          https://github.com/odoo-l10n-ar
+  #facebook:     sendtoinc
+  #twitter:      sendtoinc
+  gplus:        '111927348615509591736'
+  faq:
+    link: /faq
+    text:
+      es: "RPF"
+      en: "FAQ"
+  func:
+    link: /func
+    text:
+      es: "Funcionalidades"
+      en: "Functionalities"
+  collab:
+    link: /collab
+    text:
+      es: "Cómo colaborar"
+      en: "How to collaborate"
+  about:
+    link: /about
+    text:
+      es: "Acerca de"
+      en: "About"
+
+  # Collaboration link
   
+  # Github link
+  github_link: https://github.com/odoo-l10n-ar
+  github_text:
+    en: "See me in GitHub"
+    es: "Búscame en GitHub"
+  #tagline:      "GitHub Repository"
+  references_text:
+    en: "References"
+    es: "Referencias"
+  answered_by_text:
+    en: "Answered by"
+    es: "Respuesta de"
+  written_by_text:
+    en: "Written by"
+    es: "Escrito por"
+
+
   # Product Information
-  product_link: http://incorporated.sendtoinc.com/
-  tagline:      "Get a modern blog for your company"
+  #product_link: https://github.com/odoo-l10n-ar
+  #tagline:      "GitHub"
   
   # Comments
   disqus:
@@ -39,9 +89,14 @@ inc:
   # eg. 'Droid+Sans:400,700|Droid+Serif:400,700'
   google_font: 'Droid+Sans:400,700'
   
-  # Setup your fonts, colors etc at _assets/stylesheets/main.scss
+  # Setup your fonts, colors etc at _assets/stylesheets/main.scss  
 
-url:         http://incorporated.sendtoinc.com
+#
+collections:
+  - questions 
+
+
+url:         https://github.com/odoo-l10n-ar
 source:      .
 destination: ./_site
 plugins:     ./_plugins
@@ -54,7 +109,7 @@ timezone:    nil
 future:      false
 show_drafts: nil
 limit_posts: 0
-pygments:    true
+highlighter:    true
 
 relative_permalinks: true
 
@@ -62,7 +117,7 @@ permalink:     pretty
 paginate_path: 'page:num'
 paginate: 10
 
-markdown:      maruku
+markdown:      kramdown
 markdown_ext:  markdown,mkd,mkdn,md
 textile_ext:   textile
 

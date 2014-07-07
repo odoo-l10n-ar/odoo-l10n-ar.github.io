@@ -1,47 +1,35 @@
 ---
 layout: base
 lang: es
-categories:
-  - es
-section: main
+categories: es faq
+section: collab
 ---
-<div class="blog-cover" style="background-image:url(/images/{{ site.inc.cover_image }});">
-    
-    <section>
-        <div class="container">
-            <h1>{{ site.inc.title.[page.lang] }}</h1>
-            {% if site.inc.subtitle.[page.lang] %}<h3>{{ site.inc.subtitle.[page.lang] }}</h3>{% endif %}
-        
-            {% if site.inc.twitter %}
-            <a href="https://twitter.com/{{ site.inc.twitter }}" title="Follow on Twitter" target="_blank"><i class="icon icon-twitter"></i></a>
-            {% endif %}
-            {% if site.inc.facebook %}
-            <a href="http://facebook.com/{{ site.inc.facebook }}" title="Like on Facebook" target="_blank"><i class="icon icon-facebook"></i></a>
-            {% endif %}
-            <a href="/feed.xml" title="RSS Feed">
-                <i class="icon icon-rss"></i>
-            </a>
-        </div>
-    </section>
-</div>
-
-
 <article class="container">
-{% for post in paginator.posts %}
-  {% unless post.draft or post.section != 'main'%}
+{% for post in site.posts %}
+    {% if post.section == 'collab' %}
     <section class="index">
         <!-- {% if post.author.image %}<img src="/images/{{ post.author.image }}" class="avatar">{% endif %}-->
         <div>
             <h2 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
             <p>{{ post.excerpt }}</p>
             <div class="meta">
-		{{ site.inc.written_by_text.[post.lang] }} <address>{{ post.author.name }}</address> &mdash;
+		{% if post.references %}
+		{{ site.inc.references_text.[[post.lang]] }}:
+		<ul class="references">
+		{% for ref in post.references %}
+		{% for r in ref %}
+		{% if r %}<li><a href="{{ r[1] }}">{{ r[0] }}</a></li>{% endif %}
+		{% endfor %}
+		{% endfor %}
+		</ul><br/>
+		{% endif %}
+		{{ site.inc.answered_by_text.[[post.lang]] }} <address>{{ post.author.name }}</address> &mdash;
                 <time pubdate datetime="{{ post.date | date: "%Y-%d-%B" }}" title="{{ post.date | date: "%B %d, %Y" }}">{{ post.date | date: "%B %d, %Y" }}</time>
             </div>
         </div>
         <hr>
     </section>
-    {% endunless %}
+    {% endif %}
     {% endfor %}
     <section class="pagination" style="text-align:center">
       {% if paginator.previous_page %}
