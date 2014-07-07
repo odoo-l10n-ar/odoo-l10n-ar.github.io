@@ -16,10 +16,8 @@ section: faq
 		{% if post.references %}
 		{{ site.inc.references_text.[[post.lang]] }}:
 		<ul class="references">
-		{% for ref in post.references %}
-		{% for r in ref %}
+		{% for r in post.references %}
 		{% if r %}<li><a href="{{ r[1] }}">{{ r[0] }}</a></li>{% endif %}
-		{% endfor %}
 		{% endfor %}
 		</ul><br/>
 		{% endif %}
