@@ -24,13 +24,12 @@
     <meta property="og:image" content="{{ site.url }}/images/{{ site.inc.logo }}"/>   
     {% endif %}
     {% if page.excerpt %}
-    <meta property="og:description" content="{{ page.excerpt }}"/>
-    <meta name="description" content="{{ page.excerpt }}"/>
+    <meta property="og:description" content="{{ page.excerpt | strip_html }}"/>
+    <meta name="description" content="{{ page.excerpt | strip_html }}"/>
     {% endif %}
     <meta property="og:site_name" content="{{ site.inc.title.[page.lang] }}">     
 </head>
 <body>
-    
 <section class="site-nav">
     <header>
         <nav id="navigation">
