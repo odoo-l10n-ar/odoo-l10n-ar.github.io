@@ -5,6 +5,7 @@ date:   2014-07-July
 lang:   es
 author:
   name: Cristian S. Rocha 
+  github: csrocha
 categories: es func
 section: collab
 ---
@@ -15,6 +16,8 @@ Cómo usario puedes participar de varias maneras.
   * **Alpha tester**. Quieres probar el módulo? Haslo en un ambiente de homologación. No es tan arriesgado, pero quizás sientas un nivel de frustración muy grande al ver la cantidad de errores y problemas que podría tener un módulo. Solo te pedimos paciencia y confianza.
   * **Promotor**. Busca un desarrollador, funcional y/o tester y contratalo para que mejore un módulo. Mira la lista de [colaboradores](https://github.com/orgs/odoo-l10n-ar/teams) y elige el mejor grupo que puedas armar!
   * **Donador**. Has una donación directa sobre la localización. Ya te indicaremos como realizarla en forma anónima y electrónica en esta misma página cuando tengamos este asunto cerrado.
+
+<!-- more -->
 
 Si has elegido ser tester, te comentamos que no es una tarea fácil. No buscamos un tester que diga que algo funciona o no funciona, buscamos más que ello. Es por eso que te pedimos que leas atentamente lo que viene a continuación.
 

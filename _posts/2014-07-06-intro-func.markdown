@@ -13,3 +13,4 @@ En esta sección encontrará las funcionalidades que desarrollamos. Por ahora es
 
 Si está pensando en proponer requisitos, por favor acceda libremente a [requisitos](https://github.com/odoo-l10n-ar/)
 
+<!-- more -->

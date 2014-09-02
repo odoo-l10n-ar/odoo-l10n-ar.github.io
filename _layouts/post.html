@@ -12,10 +12,6 @@ layout: base
 
     <div class="container">
         <header>
-            <div class="meta">
-                By <address><a rel="author" href="{{ page.author.link }}" title="{{ page.author.name }}" target="_blank">{{ page.author.name }}</a></address> &mdash;
-                <time pubdate datetime="{{ page.date | date: "%Y-%d-%B" }}" title="{{ page.date | date: "%B %d, %Y" }}">{{ page.date | date: "%B %d, %Y" }}</time>
-            </div>
             <h1 class="title">{{ page.title }}</h1>
             {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
         </header>
@@ -27,9 +23,7 @@ layout: base
 
         <footer>
             <address>
-               {% if page.author.image %}<img src="/images/{{ page.author.image }}">{% endif %}
-                <p>Written by <strong><a rel="author" href="https://twitter.com/{{ page.author.twitter }}" title="{{ page.author_name }}" target="_blank">{{ page.author.name }}</a></strong><br>
-                <span class="muted">{{ page.author.bio }}</span>
+		 &mdash; <p>{{ site.inc.written_by_text.[[page.lang]] }} <strong><a rel="author" href="https://github.com/{{ page.author.github }}" title="{{ page.author_name }}" target="_blank">{{ page.author.name }}</a></strong><br>
                 </p>
             </address>
 

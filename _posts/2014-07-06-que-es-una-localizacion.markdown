@@ -11,6 +11,7 @@ section: faq
 ---
 Odoo está diseñado como una herramienta empresarial sin orientación legal ni práctica específica a un país.
 La orientación se consigue con un conjunto de módulos que permiten adaptar lo genérico a un país. Ese conjunto de módulos se los conoce como localización.
+<!-- more -->
 
 Cada país tiene una localización básica (en general, muy básica) propuesta por Odoo s.a. Pero los implementadores de cada país pueden proponer la suya.
 En si, si los implementadores se ponen de acuerdo pueden desarrollar en conjunto una localización mucho más poderosa y acorde con su país.

@@ -5,11 +5,12 @@ date:   2014-07-July
 lang:   es
 author:
   name: Cristian S. Rocha 
+  github: csrocha
 categories: es func
 section: collab
 ---
 
-Si sabes programar, te comentamos que hemos realizado esta localización para vos. Pensamos en simplificar tu tarea, armando una estructura donde te puedas concentrar en la implementación y no el problema funcional. Nos puedes ayudar en:
+Si sabes programar, te comentamos que hemos realizado esta localización para vos. Pensamos en simplificar tu tarea, armando una estructura donde te puedas concentrar en la implementación y no el problema funcional.  <!-- more --> Nos puedes ayudar en:
 
 * Eliminar errores o implementar mejoras.
   * Elige uno de los [casos/issues](https://github.com/organizations/odoo-l10n-ar/dashboard/issues/repos?direction=desc&state=open) que tenemos abiertos.

@@ -10,8 +10,8 @@ section: faq
     <section class="index">
         <!-- {% if post.author.image %}<img src="/images/{{ post.author.image }}" class="avatar">{% endif %}-->
         <div>
-            <h2 class="title"><a href="{{ post.url }}" rel="prefetch">{{ post.title }}</a></h2>
-            <p>{{ post.excerpt }}</p>
+            <h2 class="title">{{ post.title }}</h2>
+	    <p>{{ post.excerpt }} <a href="{{ post.url }}" rel="prefetch">leer más...</a></p>
             <div class="meta">
 		{% if post.references %}
 		{{ site.inc.references_text.[[post.lang]] }}:
