@@ -8,7 +8,7 @@ author:
 categories: es func
 section: faq
 ---
-En esta sección van a encontrar las respuestas a las preguntas más frecuentes que se realizen en el sistema de [Issues|https://github.com/odoo-l10n-ar/odoo-l10n-ar.github.io/issues] de la página de la localización, y que sean generales a la misma.
+En esta sección van a encontrar las respuestas a las preguntas más frecuentes que se realizen en el sistema de [Issues](https://github.com/odoo-l10n-ar/odoo-l10n-ar.github.io/issues) de la página de la localización, y que sean generales a la misma.
 
 <!-- more -->
 
