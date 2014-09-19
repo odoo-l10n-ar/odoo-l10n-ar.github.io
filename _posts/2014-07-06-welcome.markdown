@@ -12,7 +12,7 @@ section: main
 Usted a accedido al sitio oficial de Otra Localización Argentina de Odoo. Si se pregunta ¿Qué es Odoo? ¿Qué es una localización? y otras que no encuentre en esta primera página, esperamos responderlas en [Respuestás a Preguntas Frecuentes](/faq). Pero si ya sabe de que se está hablando, puede seguir adelante sin prejuicio.
 
 Si, existen otras localizaciones. Una considerada la oficial, o [Grupo de la Localización Argentina](https://github.com/odoo-ar/odoo-ar.github.io), y una iniciativa llamada [Proyecto Aconcagua](http://proyectoaconcagua.com.ar).
-Entonces, ¿porqué otra? La respuesta más fácil sería porqué es necesario. Por ahora nos vamos a escudar con la idea de diversidad, pero el asunto es más complicado.
+Entonces, ¿porqué otra? La respuesta más fácil sería porque es necesario. Por ahora nos vamos a escudar con la idea de diversidad, pero el asunto es más complicado.
 
 Lo mejor no es detallar las diferencias que existen entre las localizaciones, sino explicar en [Acerca de](/about) quienes somos nosotros y que objetivos tenemos.
 
